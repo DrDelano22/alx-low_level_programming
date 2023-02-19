@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- *
+ * printing possible number combinations of two digits.
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -24,7 +24,7 @@ if (c + d != 17)
 putchar(',');
 putchar(' ');
 }
-}
+i}
 c++;
 }
 d++;
