@@ -2,25 +2,34 @@
 
 /**
  * main - Entry point
- * Description: Print all combinations of single digit numbers.
- * Numbers must be seaerated by commas and a space.
- * You can only use 'putchar' to printto the console.
- * You can only use 'putchar' up to four times.
- * You are not allowed to use any variable of type 'char'.
+ * Description:Write a program that prints all possible combinations of two two-digit numbers
+ * The combination of numbers must be separated by comma, followed by a space.
+ * You can only use 'putchar' up to eight times.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int ch;
-for (ch = 0; ch < 10; ch++)
+int i, j;
+for (i = 0; i < 100; i++)
 {
-putchar(ch + '0');
-if (ch < 9)
+for (j = 0; j < 100; j++)
+{
+if (i < j)
+{
+putchar((i / 10) + 48);
+putchar((i % 10) + 48);
+putchar(' ');
+putchar((j / 10) + 48);
+putchar((j % 10) + 48);
+if (i != 98 || j != 99)
 {
 putchar(',');
 putchar(' ');
 }
 }
+}
+}
 putchar('\n');
 return (0);
 }
+
