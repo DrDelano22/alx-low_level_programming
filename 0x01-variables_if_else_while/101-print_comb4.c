@@ -11,35 +11,27 @@
  */
 int main(void)
 {
-int h = '0', t = '1', u = '2';
+int h, t, u = 0;
+for (h = 0; h < 8; h++)
 {
-while ((h <= '7') || (t <= '8') || (u <= '9'))
-putchar(h);
-putchar(t);
-putchar(u);
-}
-if (u != '9')
+for (t = h + 1; t < 9; t++)
 {
-++u;
-}
-else
+for (u = t + 1; u < 10; u++)
 {
-if (t != '8')
+if (h != t && h != u && t != u)
 {
-++t;
-u = t + 1;
-}
-else
-{
-++h;
-t = h + 1;
-u = t + 1;
-}
+putchar(h + '0');
+putchar(t + '0');
+putchar(u + '0');
+if (h + t + u < 24)
 {
 putchar(',');
 putchar(' ');
 }
+}
+}
+}
+}
 putchar('\n');
 return (0);
-}
 }
