@@ -1,10 +1,7 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
- * Description:Write a program that prints all possible combinations of two two-digit numbers
- * The combination of numbers must be separated by comma, followed by a space.
- * You can only use 'putchar' up to eight times.
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
