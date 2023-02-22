@@ -7,22 +7,14 @@
  */
 int main(void)
 {
-char a = 95;
-char b = 112;
-char c = 117;
-char d = 116;
-char e = 99;
-char f = 104;
-char g = 97;
-char h = 114;
-putchar(a);
-putchar(b);
-putchar(c);
-putchar(d);
-putchar(e);
-putchar(f);
-putchar(g);
-putchar(h);
-putchar('\n');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
